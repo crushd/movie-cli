@@ -36,7 +36,7 @@ var TV = function() {
 
             var actorName = response.data[0].person.name;
             var actorBday = response.data[0].person.birthday;
-            var actorUrl  = response.data[0].person._links.self.href;
+            var actorUrl  = response.data[0].person.url;
 
             var output = "\nActor: " + actorName + "\nBirthday: " + actorBday + "\nURL: " + actorUrl;
             var log_output = "\nActor: " + actorName + "; Birthday: " + actorBday + "; URL: " + actorUrl;
